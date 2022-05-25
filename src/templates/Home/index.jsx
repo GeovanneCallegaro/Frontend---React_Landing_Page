@@ -1,9 +1,10 @@
+import { Heading } from '../../components/Heading';
 import * as C from './styles';
 
 function Home() {
   return (
     <C.Wrapper>
-      <h1>Oi</h1>
+      <Heading>O texto que eu quero</Heading>
     </C.Wrapper>
   );
 }
