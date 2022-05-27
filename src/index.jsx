@@ -10,7 +10,7 @@ root.render(
   <>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Home />,
+      <Home />
     </ThemeProvider>
   </>,
 );
