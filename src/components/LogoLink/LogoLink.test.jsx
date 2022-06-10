@@ -11,8 +11,8 @@ describe('<LogoLink />', () => {
 
   it('should render image logo', () => {
     renderTheme(<LogoLink link="#target" text="Olá mundo" image="image.jpg" />);
-    expect(screen.getByRole('img', { name: 'Olá mundo' })).toHaveAttribute(
-      'src',
+    expect(screen.getByAltText('Olá mundo')).toHaveAttribute(
+      'srcSet',
       'image.jpg',
     );
   });
