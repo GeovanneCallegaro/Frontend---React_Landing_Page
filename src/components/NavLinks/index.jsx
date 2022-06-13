@@ -4,7 +4,7 @@ import { MenuLink } from '../MenuLink';
 
 export const NavLinks = ({ links = [] }) => {
   return (
-    <C.Container>
+    <C.Container aria-label="Main menu">
       {links.map((link) => (
         <MenuLink {...link} key={link.link} />
       ))}
